@@ -1,0 +1,26 @@
+
+Criar chave SSH
+1º ssh-keygen -t ed25519 -C colocar o e-mail aqui.com
+2º Após gerar a chave copiar e colar a chave publica no GitHub
+3º eval $(ssh-agent -s)
+4º ssh-add id_ed25519
+
+ 
+-- __S---------------------------------------
+Inicializar git
+git init
+verificar arquivo 
+git status
+enviar arquivo 
+git add *
+salvar arquivo
+git commit -m "teste de alteração"
+enviar o arquivo para servidor remoto
+git push origin master
+
+baixar o arquivo para o desktop
+git pull origin master
+
+clonar repositorio
+
+ git clone https://github.com/klauspost/compress.git
